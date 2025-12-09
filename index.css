@@ -1,0 +1,698 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        background-color: #F7F7F7;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    ul{
+        list-style: none;
+    }
+
+    #wrap {
+        position: relative;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    p {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    .lap{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+    }
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: transparent;
+        transition: background-color 0.3s ease-out;
+    }
+
+    header li{
+        list-style-type: none;
+    }
+
+
+    .head-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #B650F0;
+        padding: 0.16vw;
+    }
+
+    .head-top p {
+        position: relative;
+        right: 44.2vw;
+        top: 0.2vw;
+        font-size: 2vw;
+        color: #FCFF55;
+    }
+
+    .head-top img {
+        width: 5vw;
+        position: relative;
+        left: 1.7vw;
+    }
+
+    .head-middle {
+        background-color: #ededed;
+        height: 3.4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0vw 0.1vw 0.4vw rgba(30, 30, 30, 0.168);
+    }
+
+    .head-middle .button {
+        display: flex;
+        position: relative;
+        right: 30.73vw;
+    }
+
+    .head-middle .button-red {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FE5F58;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-yellow {
+        width: 1vw;
+        height: 1vw;
+        background-color: #FEBC30;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+    .head-middle .button-green {
+        width: 1vw;
+        height: 1vw;
+        background-color: #29C840;
+        border-radius: 50vw;
+        margin: 0.2vw;
+        border: 0.09vw solid #bcbcbc;
+    }
+
+      .head-middle p {
+        font-size: 1.3vw;
+        color: #4C4C4C;
+        border: 0.15vw solid #c3c3c3b4;
+        border-radius: 0.6vw;
+        width: 30vw;
+        height: 2.6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 0.4vw 8vw 0.4vw 8vw; */
+        /* 위  오  아 왼*/
+    }
+
+    .logo {
+        width: 14vw;
+        padding: 3vw;
+        position: relative;
+        left: 3vw;
+    }
+
+    .line {
+        border: 0.01vw solid #ffff;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 1.95vw;
+    }
+
+    /* 전체 헤더 컨테이너를 Flexbox로 설정 */
+    .main-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 3vw;
+        position: relative;
+        left: 32vw;
+        bottom: 5.15vw;
+    }
+
+    .left-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+    .right-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+    }
+
+    .middle-group{
+        display: flex;
+        flex-flow: column;
+        /* border: 1px solid red; */
+        margin-right: 3vw;
+    }
+
+
+    .left-group ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-group li {
+        margin-bottom: 0.3vw;
+        text-align: center;
+    }
+
+
+    .main-header a {
+        display: block;
+        text-decoration: none;
+        color: #ffff;
+        font-size: 1vw;
+        padding-top: 1vw;
+        border-top: 0.26vw solid #ffff;
+        width: 100%;
+    }
+
+
+
+    .left-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+    .middle-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .right-group ul li:not(:first-child) a {
+        border-top: none;
+        padding-top: 1vw;
+    }
+
+
+    .left-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .middle-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+    .right-group ul .line-1{
+        width: 3.4vw;
+        height: 0.3vw;
+        background-color: #fff;
+        transform: rotate(15deg);
+        position: relative;
+        top: 0.01vw;
+        margin-bottom: 1vw;
+    }
+
+
+    .logo,
+    .line,
+    .main-header {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+
+    /* --- 새로 추가된 기능용 CSS --- */
+header {
+    position: fixed; 
+    transition: transform 0.4s ease-in-out; 
+}
+
+/* .menu-trigger {
+    z-index: 20;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #B650F0; 
+    cursor: pointer;
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease;
+    padding: 0.5vw 1vw;
+    border-radius: 2vw;
+} */
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* --- [수정된 버전] 기능 구현 CSS --- */
+.logo, .line, .main-header {
+    opacity: 1;
+    transform: none;
+}
+
+header {
+    position: fixed;
+    top: 6.2vw;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: transform 0.5s ease-in-out, background-color 0.5s;
+}
+
+
+header.hide {
+    transform: translateY(-150%);
+}
+
+header.active {
+    background-color: #da9dfd58; 
+    backdrop-filter: blur(0.4vw); /* 👈 블러 효과 추가 (픽셀값 조절 가능) */
+    -webkit-backdrop-filter: blur(0.4vw); /* 👈 사파리 브라우저 호환용 */
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+}
+
+/* --- [추가] 메뉴 열렸을 때 내부 요소 색상 변경 --- */
+
+
+header.active .main-header a {
+    color: #B650F0;     
+    border-top-color: #B650F0 ; /* 메뉴 위 얇은 선도 보라색으로 */
+    transition: color 0.5s, border-color 0.5s; /* 색깔 부드럽게 바뀌게 */
+}
+
+
+header.active .line {
+    border-color: #B650F0;
+    transition: border-color 0.5s;
+}
+
+/* 3. 작은 장식 선들 (.line-1) 배경색 변경 */
+header.active .line-1 {
+    background-color: #B650F0;
+    transition: background-color 0.5s;
+    position: relative;
+    right: 0.2vw;
+}
+
+
+.menu-trigger {
+    position: fixed;
+    top: 7vw;
+    right: 1vw;
+    z-index: 100;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #B650F0;
+    padding: 0.6vw 1.5vw;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+
+}
+
+.menu-trigger.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu-trigger:hover {
+    font-size: 1.7vw;
+}
+
+
+.friends-container {
+        display: flex;
+        /* justify-content: center; */
+        /* 중앙 정렬 */
+        align-items: center;
+        align-items: flex-end;
+        height: 4vw;
+        width: 9vw;
+        /* height: 100vw; */
+        /* 화면 중앙에 보려고 넣은 거라 나중에 빼도 돼 */
+        /* background-color: black; */
+        /* border: 1px solid red; */
+        /* GIF처럼 배경 검게 */
+        margin-bottom: 5vw;
+        position: relative;
+        left: 4vw;
+        top: 2vw;
+    }
+
+    /* 공통 이미지 스타일 */
+    .letter {
+        /* width: 60px; */
+        /* 이미지 크기는 네 디자인에 맞춰 조절해 */
+        height: auto;
+        margin: 0 0.1vw;
+        /* 글자 사이 간격 살짝 */
+
+        /* 애니메이션 적용: 이름(bounce) 시간(1.5초) 무한반복(infinite) 부드럽게(ease-in-out) */
+        animation: bounce 1.6s infinite ease-in-out;
+    }
+
+    /* 움직임 정의 (위아래 둥둥) */
+    @keyframes bounce {
+
+        0%,
+        30% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-1.3vw);
+        }
+
+        100%{
+            transform: translateY(0);
+        }
+
+    }
+
+    /* 핵심! 글자마다 박자가 늦게 시작하게 설정 (Wave 효과) */
+    /* nth-child(숫자)는 n번째 이미지를 뜻해 */
+
+    .letter:nth-child(1) {
+        animation-delay: 0s;
+        width: 1vw;
+    }
+
+    /* F */
+    .letter:nth-child(2) {
+        animation-delay: 0.1s;
+        width: 0.8vw;
+    }
+
+    /* r */
+    .letter:nth-child(3) {
+        animation-delay: 0.2s;
+        width: 0.58vw;
+    }
+
+    /* i */
+    .letter:nth-child(4) {
+        animation-delay: 0.3s;
+        width: 1.09vw;
+    }
+
+    /* e */
+    .letter:nth-child(5) {
+        animation-delay: 0.4s;
+        width: 1.19vw;
+    }
+
+    /* n */
+    .letter:nth-child(6) {
+        animation-delay: 0.5s;
+        width: 1.2vw;
+    }
+
+    /* d */
+    .letter:nth-child(7) {
+        animation-delay: 0.6s;
+        width: 1.1vw;
+    }
+
+    /* s */
+    .letter:nth-child(8) {
+        animation-delay: 0.7s;
+        width: 0.7vw;
+    }
+
+
+.main{
+    width: 100vw;
+    min-height: 90vw;
+    background-image: url('../img/phoebe-main-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main img:nth-child(1){
+    width: 80vw;
+    position: relative;
+    left: 4vw;
+    top: 43vw;
+}
+
+.main img:nth-child(2){
+    width: 34vw;
+    position: relative;
+    top: 43vw;
+    left: 59vw;
+}
+
+.main .keyword img{
+    height: 4vw;
+    width: auto;
+}
+.main .keyword img:nth-child(1){
+    position: absolute;
+    top: 20vw;
+    left: 60vw;
+}
+
+.main .keyword img:nth-child(2){
+    position: absolute;
+    top: 33vw;
+    left: 20vw;
+}
+
+.main .keyword img:nth-child(3){
+    position: absolute;
+    top: 43vw;
+    left: 60vw;
+}
+
+.section-1{
+    width: 100vw;
+    min-height: 60vw;
+    position: relative;
+    margin-top: 20vw;
+}
+
+.section-1 p{
+    font-size: 4vw;
+    line-height: 4.6vw;
+    padding: 5vw;
+    color: #B1980F;
+
+}
+
+.section-1 img{
+    width: 20vw;
+    position: relative;
+    left: 72vw;
+}
+
+.section-2{
+    width: 100vw;
+    min-height: 100vw;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid red;
+}
+
+.section-2 h3{
+    font-family: 'Grenze', sans-serif;
+    font-size: 7vw;
+    color: #B1980F;
+    position: relative;
+    left: 19vw;
+    top: 2vw;
+}
+
+.section-2 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #B1980F;
+    width: 60vw;
+    position: relative;
+    left: 19vw;
+    top: 2vw;
+}
+
+.section-2 ul{
+    position: absolute;
+    right: 0;
+    top: 24vw;
+}
+.section-2 ul li{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-2 ul li img:nth-child(1){
+    width: 20vw;
+    margin-right: 1vw;
+}
+
+.section-2 ul li img:nth-child(2){
+    width: 60vw;
+}
+
+.section-2 img:nth-child(4){
+    width: 30vw;
+    position: relative;
+    top: 51.5vw;
+    left:39.5vw;
+}
+
+.section-3{
+    width: 100vw;
+    min-height: 80vw;
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 5vw;
+    padding-top: 20vw;
+}
+
+.section-3 ul li{
+    display: flex;
+}
+
+.section-3 ul li img{
+    width:24vw;
+    margin: 0.5vw;
+}
+.section-3 ul li img:nth-child(3){
+    width: 24vw;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.section-3 h2{
+    font-family: 'Grenze', sans-serif;
+    font-size: 5vw;
+    color: #B1980F;
+    position: relative;
+    right: 0.5vw;
+}
+
+.section-3 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #B1980F;
+    width: 67vw;
+    position: relative;
+    right: 0.5vw;
+    top: 2vw;
+    text-align: right;
+}
+
+.section-3 .circle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60vw;
+    height: 60vw;
+    background-color: #EBE7DF;
+    z-index: -1;
+
+}
+
+.section-4{
+    width: 100vw;
+    min-height: 60vw;
+    background-image: url('./img/phoebe-insta-bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 4vw;
+}
+
+.section-4 h2{
+    font-family: 'Grenze', sans-serif;
+    color: #FFEC81;
+    font-size: 7vw;
+}
+
+.section-4 li{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.section-4 img:nth-child(1){
+    height: 13vw;
+    position: relative;
+    left: 7vw;
+}
+
+.section-4 img:nth-child(2){
+    height: 13vw;
+    position: relative;
+    left: 15vw;
+    bottom: 5vw;
+}
+
+.section-4 img:nth-child(3){
+    height: 13vw;
+    position: relative;
+    left: 12vw;
+    bottom: 7vw;
+}
+
+.section-4 p{
+    font-size: 1.4vw;
+    line-height: 1.7vw;
+    color: #FFEC81;
+    width: 49vw;
+    position: relative;
+    left: 40vw;
+    bottom: 4vw;
+    text-align: right;
+}
