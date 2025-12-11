@@ -41,9 +41,9 @@ gsap.from(
 gsap.from(
             ".main .tag-1",
             {
-                y: "8vw",
+                y: "4vw",
                 opacity: 0, //투명인 상태에서 시작
-                duration: 1, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
+                duration: 0.5, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
                 delay: 0.4,
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
@@ -59,9 +59,9 @@ gsap.from(
 gsap.from(
             ".main .tag-2",
             {
-                y: "8vw",
+                y: "4vw",
                 opacity: 0, //투명인 상태에서 시작
-                duration: 1, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
+                duration: 0.5, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
                 delay: 0.5,
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
@@ -77,9 +77,9 @@ gsap.from(
 gsap.from(
             ".main .tag-3",
             {
-                y: "8vw",
+                y: "4vw",
                 opacity: 0, //투명인 상태에서 시작
-                duration: 1, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
+                duration: 0.5, //얼마동안 이 모션을 진행할건지 - 숫자가 커질수록 느려짐
                 delay: 0.6,
                 ease: "power1.out",
                 stagger: 0.35, //각 애미메이션 사이에 0.15초의 지연을 둠
