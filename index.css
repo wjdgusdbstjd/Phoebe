@@ -77,7 +77,9 @@
         width: 5vw;
         position: relative;
         left: 1.7vw;
+        top: 0.2vw;
     }
+
 
     .head-middle {
         background-color: #ededed;
@@ -584,7 +586,7 @@ header.active .line-1 {
     width: 30vw;
     position: relative;
     top: 51.5vw;
-    left:39.5vw;
+    left:40vw;
 }
 
 .section-3{
@@ -1039,6 +1041,7 @@ header.active .line-1 {
     height: 30vw;
     object-fit: cover; 
     object-position: center;
+    margin-bottom: 3vw;
 }
 
 .section-7-left h4{
